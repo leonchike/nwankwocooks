@@ -1,0 +1,131 @@
+header{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    display: block;
+    background: url(/imgs/headerbg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerh1{
+    font-family: 'Palatino';
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    /*
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    left: 50%;
+    transform: translateX(-50%);
+    */
+}
+
+.titleCenter{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.allrecipesbtn{
+    float:right;
+    margin-top: 10px;
+    margin-right: 2%;
+    background-color: #FD5C63;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    right: 2%;
+    top: 10px;
+}
+
+.pageLabel{
+    width: 250px;
+    padding: 23px;
+    background-color: #FD5C63;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(37,37,37,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(37,37,37,1);
+    box-shadow: 0px 0px 20px 0px rgba(37,37,37,1);
+    transform: translateY(-31px);
+    margin: 0 auto;
+}
+
+.pageLabel h2{
+    font-family: 'Palatino' !important;
+    font-weight: 700;
+}
+
+.homeCategory{
+    margin-top: 55px;
+}
+
+.homeCategory h3{
+    text-align: center;
+    font-family: 'Palatino';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.categoryDiv{
+    text-align: center;
+}
+
+.categoryBox{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.categoryDiv{
+    position: relative;
+    padding: 10px;
+}
+
+.categoryDiv a{
+    font-size: 17px;
+    color: #6D6D6D;
+    font-weight: 500;
+}
+
+.categoryDiv a:hover{
+    color: #FD5C63;
+}
+
+
+.categoryDiv:last-of-type{
+    margin-bottom: 60px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

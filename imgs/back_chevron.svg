@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>back_chevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Category-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-44.000000, -63.000000)">
+        <g id="back_chevron" transform="translate(50.500000, 69.500000) rotate(45.000000) translate(-50.500000, -69.500000) translate(46.000000, 65.000000)" fill="#FFFFFF">
+            <rect id="Rectangle-4" x="0" y="0" width="2" height="9"></rect>
+            <rect id="Rectangle-4" transform="translate(4.500000, 8.000000) rotate(90.000000) translate(-4.500000, -8.000000) " x="3.5" y="3.5" width="2" height="9"></rect>
+        </g>
+    </g>
+</svg>

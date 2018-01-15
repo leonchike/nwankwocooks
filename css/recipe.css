@@ -1,0 +1,386 @@
+.headerRecipe{
+    height: auto;
+    min-height: 200px;
+    background: #A56ED6;
+    
+}
+
+.recipeFooter{
+    background: #252525;
+}
+
+.headerTitle{
+    position: relative;
+    max-width: 550px;
+    display: block;
+    margin: 0px auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.headerTitle h1{
+    line-height: 40px;
+    font-size: 34px;
+    font-family: 'Palatino';
+    font-weight: 700;
+    color: #fff;
+}
+
+.headerTitleDivider{
+    width: 36px;
+    height: 3px;
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headerTitle h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px; 
+}
+
+.recipePageDivider{
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+.recipeContainer{
+    width: 90%;
+    max-width: 900px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    display: flex;
+}
+
+.recipeIngredients{
+    display: inline-block;
+    float: left;
+    min-height: 50px;
+    height: auto;
+    width: 30%;
+    position: relative;
+}
+
+.recipeIngDiv{
+    width: calc(100% - 60px);
+}
+
+.recipeInstructions{
+    display: inline-block;
+    float: left;
+    min-height: 50px;
+    height: auto;
+    width: calc(70% - 1px);
+    border-left: 1px solid rgba(37,37,37,0.2);
+    position: relative;
+}
+
+.recipeInstDiv{
+    padding-left: 60px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h4{
+    font-size: 20px;
+    font-family: 'Palatino';
+    padding-bottom: 16px;
+}
+
+.recipeBullet{
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    padding-top: 1px;
+    color: #363636;
+    height: 100%;
+    position: absolute;
+}
+
+.recipeText{
+    color: #363636;
+    font-size: 15px;
+    line-height: 20px;
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+}
+
+.recipeIstBullet{
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    color: #363636;
+    line-height: 28px;
+    font-size: 16px;
+    position: absolute;
+    height: 100%;
+}
+
+.recipeIstText{
+    color: #363636;
+    font-size: 16px;
+    line-height: 28px;
+    float: left;
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.recipeIngItemDiv{
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.recipeInstSubHeader h5{
+    font-weight: 700;
+    color: #363636;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.recipeIstItemDiv{
+    width: 100%;
+    display: block;
+    position: relative;
+    min-height: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    display: flex;
+}
+
+.recipeIstItemDiv:last-of-type{
+    margin-bottom: 0px !important;
+}
+
+.statsDiv{
+    max-width: 300px;
+    min-height: 50px;
+}
+
+.statsRow{
+    width: 100%;
+    min-height: 25px;
+}
+
+.stat{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.stat h6{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.stat h6 span{
+    font-weight: 400;
+}
+
+
+.imageSection{
+    height: auto;
+    min-height: 50px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+}
+
+.imageContainer{
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    
+}
+
+.imagOfFood{
+    width: 100%;
+}
+
+.ingredientsDivider{
+    padding-top: 30px;
+}
+
+
+
+/* Mobile*/
+
+@media (max-width: 600px) {
+    .recipeContainer{
+        display: block;
+    }
+    .recipeIngredients{
+        width: 100%;
+        display: block;
+        float: none !important;
+        border: none;
+        clear: both;
+    }
+    .recipeInstructions{
+        width: 100%;
+        display: block;
+        float: none !important;
+        border: none;
+    }
+    .recipeIngDiv{
+        width: 100%;
+    }
+    .recipeIngDiv h4{
+        text-align: center;
+    }
+    .recipeBullet{
+        display: none;
+    }
+    .recipeText{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .recipeInstDiv{
+        padding-left: 0px;
+    }
+    .recipeInstDiv h4{
+        padding-top: 40px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* Customized Headers*/
+
+.r00001bg{
+    background: url(/imgs/00001.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00002bg{
+    background: url(/imgs/00002.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00003bg{
+    background: url(/imgs/00003.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00004bg{
+    background: url(/imgs/00004.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00005bg{
+    background: url(/imgs/00005.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00006bg{
+    background: url(/imgs/00006.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00007bg{
+    background: url(/imgs/00007.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00008bg{
+    background: url(/imgs/00008.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00009bg{
+    background: url(/imgs/00009.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00010bg{
+    background: url(/imgs/00010.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00011bg{
+    background: url(/imgs/00010.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00012bg{
+    background: url(/imgs/00012.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00013bg{
+    background: url(/imgs/00013.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.r00014bg{
+    background: url(/imgs/00014.bg.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
