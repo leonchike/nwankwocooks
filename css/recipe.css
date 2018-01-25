@@ -208,6 +208,10 @@ h4{
 
 .imagOfFood{
     width: 100%;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
 }
 
 .ingredientsDivider{
@@ -374,10 +378,6 @@ h4{
   -o-background-size: cover;
   background-size: cover;
 }
-
-
-
-
 
 
 
