@@ -1,0 +1,194 @@
+.modal-dialog{
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    min-height: calc(100% - 20px) !important;
+}
+
+.modal-content{
+    border: 0px solid rgba(255,255,255,0);
+    box-shadow: none;
+    border-radius: 0px;
+    min-height: calc(100% - 20px) !important;
+    background-color: #fff;
+}
+
+button{
+    font-weight: 700 !important;
+}
+
+.recipeModalContent{
+    width: 90%;
+    max-width: 800px;
+    margin: 0px auto;
+    display: block;
+    min-height: 100px;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.rModalHeaderWrapper{
+    width: 90%;
+    max-width: 800px;
+    margin: 0px auto;
+    display: block;
+    height: 100px;
+}
+
+.rModalHeaderWrapper h4{
+    padding-top: 20px;
+    color: #252525;
+}
+
+.rmodalClose{
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0) !important;
+    border: 1px solid rgba(37,37,37,1) !important;
+    border-radius: 2px !important;
+    background-image: none !important;
+    color: rgba(37,37,37,1);
+    opacity: 0.8;
+    text-decoration-style: none !important;
+}
+
+.rmodalClose:hover{
+    opacity: 1;
+    color: #fff;
+    background-color: rgba(37,37,37,1) !important;
+    border: 1px solid rgba(37,37,37,1) !important;
+}
+
+.rModalContentHeading{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.rModalContentBody{
+    width: 100%;
+    height: auto;
+}
+
+.rModalHDivider{
+    width: 36px;
+    height: 3px;
+    background: rgba(37,37,37,0.7);
+    margin-top: 20px;
+}
+
+
+.rModalContentHeading h5{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px;
+    color: rgba(37,37,37,0.8);
+}
+
+.rModalHeadingIcon{
+    width: 30px;
+    padding-bottom: 5px;
+}
+
+#rmh5tools{
+    margin-top: 15px;
+}
+
+.rModalContentHeading p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #363636}
+
+.rModalContentBody p{
+    color: #363636;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+
+
+.rModalContentBody p:last-of-type{
+    padding-bottom: 100px !important;
+}
+
+
+.modal-footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.rModalFooter{
+    width: calc(100% - 40px);
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    height: 80px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.m-progress{
+    width: 100%;
+}
+
+.m-progress-bar{
+    background-color: #FD5C63;
+}
+
+.modal-footer{
+    padding: 0px;
+    height: 95px;
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100%;
+}
+
+.backRMBtn{
+    position: absolute;
+    left: 0px;
+}
+
+.nextRMBtn{
+    position: absolute;
+    right: 0px;
+}
+
+.rModalFooter button{
+    padding: 10px 20px;
+    margin: 0px !important;
+    background-color: rgba(255,255,255,0) !important;
+    background-image: none !important;
+    border-radius 2px;
+    border: 1px solid rgba(255,255,255,0);
+    text-decoration-style: none;
+    opacity: 0.9;
+    outline: none !important;
+    text-shadow: none !important;
+}
+
+.rModalFooter button:hover{
+    opacity: 1;
+}
+
+.rModalFooter .nextRMBtn{
+    background-color: #FD5C63 !important;
+    border: 1px solid #FD5C63;
+}
+
+.rModalFooter .backRMBtn{
+    background-color: none !important;
+    border: 1px solid #6D6D6D;
+    color: #6D6D6D;
+}
+
+.rModalFooter .backRMBtn:hover{
+    background-color: #6D6D6D !important;
+    border: 1px solid #6D6D6D;
+    color: #fff;
+}
+

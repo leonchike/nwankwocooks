@@ -147,8 +147,14 @@ footer{
     font-weight: 700;
 }
 
+button{
+    outline: none !important;
+    text-shadow: none !important;
+}
 
-
+.spanBold{
+    font-weight: 700;
+}
 
 
 
