@@ -10,7 +10,7 @@ header{
     margin-top: 20px;
     margin-left: 4%;
     background-color: #787878;
-    padding: 8px 15px;
+    padding: 10px 15px;
     color: #fff;
     font-weight: 700;
     font-size: 12px;
@@ -25,6 +25,11 @@ header{
     background-color: #252525;
 }
 
+.backbtnwrapper{
+    position: relative;
+    height: 14px;
+}
+
 .backChev{
     float: left;
     display: inline-block;
@@ -35,7 +40,7 @@ header{
     float: right;
     display: inline-block;
     padding-left: 7px;
-    
+    height: 14px;
 }
 
 .categoryLabel{

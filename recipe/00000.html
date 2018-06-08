@@ -46,12 +46,17 @@
         <link href="/css/home.css" rel="stylesheet" type="text/css">
         <link href="/css/category.css" rel="stylesheet" type="text/css">
         <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
         <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
         <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
         <form class="modal multi-step" id="demo-modal-3">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -60,7 +65,8 @@
                         <div class="rModalHeaderWrapper">
                             <h4 class="modal-title step-1" data-step="1">Step 1</h4>
                             <h4 class="modal-title step-2" data-step="2">Step 2</h4>
-                            <h4 class="modal-title step-3" data-step="3">Final Step</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Final Step</h4>
                         </div>
                         
                     </div>
@@ -72,15 +78,20 @@
                                 </h5>-->
                                 <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
                                 <p>
-                                    <span><span class="spanBold">1 cup</span> orange Juice</span><span>  -  <span class="spanBold">1 tbs</span> cumin</span>
+                                    <span class="spanBold">1 cup</span> orange Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
                                 </p>
                                 <!--<h5 id="rmh5tools">
                                     Tools
                                 </h5>-->
                                 <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
                                 <p>
-                                    <span>Cutting Board</span><span>  -  </span>
-                                    <span>Knife</span>
+                                    <span>cooking sheet</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>plastic bag</span>
                                 </p>
                                 <div class="rModalHDivider"></div>
                             </div>
@@ -90,22 +101,126 @@
                                 </p>
                             
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
+                    
                     <div class="modal-body step-2" data-step="2">
-                        This is the second step.
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> orange Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>baking pan</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>foil</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Roast at 450℉ for 45-55 minutes. This is a really great time to make the garlic sauce. See the recipe below!
+                                </p>
+                            
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="modal-body step-3" data-step="3">
-                        This is the final step.
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> orange Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>baking pan</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>foil</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Stare at the chicken intensely while it bakes.
+                                </p>
+                            
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin *winky face* Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels... if you know what I mean
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Hi Lovie!! Gym Today?
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="modal-footer">
                         <div class="rModalFooter">
-                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
                             <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
-                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
                             <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
-                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 3)">Done!</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 4)">Done!</button>
                         </div>
                         <div class="m-progress">
                             <div class="m-progress-bar-wrapper">
@@ -121,13 +236,18 @@
             </div>
         </form>
         
+        
+        <!-- MODAL ENDS HERE -->
+        
         <header class="headerRecipe r00000bg">
             <a class="backbtn" href="/category/pasta.html">
-                <div class="backChev">
-                    <img src="/imgs/back_chevron.svg"/>
-                </div>
-                <div class="backText">
-                    <p>Back</p>
+                <div class="backbtnwrapper">
+                    <div class="backChev">
+                        <img src="/imgs/back_chevron.svg"/>
+                    </div>
+                    <div class="backText">
+                        <p>Back</p>
+                    </div>
                 </div>
             </a>
             
@@ -154,10 +274,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
                 <div class="startCookingBTN">
-                    <button class="btn btn-default" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
                     </button>
                 </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -226,12 +352,16 @@
         <footer class="simpleFooter recipeFooter">
         </footer>
         
+        <!-- MODAL SCRIPT -->
+        
         <script src="/js/multi-step-modal.js"></script>
         <script>
         sendEvent = function(sel, step) {
             $(sel).trigger('next.m.' + step);
         }
         </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    
