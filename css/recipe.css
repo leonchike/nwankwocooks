@@ -169,7 +169,26 @@ h4{
 
 .startCookingBTN{
     clear: both;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.modalPageBtn{
+    padding: 10px 20px;
+    margin: 0px !important;
+    background-color: rgba(255,255,255,1) !important;
+    background-image: none !important;
+    border-radius 2px;
+    border: 1px solid rgba(255,255,255,0);
+    text-decoration-style: none;
+    opacity: 0.9;
+    outline: none !important;
+    text-shadow: none !important;
+    border: none;
+}
+
+.modalPageBtn:hover{
+    opacity: 1;
+    border: none;
 }
 
 .statsRow{
@@ -223,6 +242,9 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
     padding-top: 30px;
 }
 
+.subHeadersRecipes{
+    font-weight: 700;
+}
 
 
 /* Mobile*/

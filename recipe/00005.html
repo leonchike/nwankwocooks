@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,227 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1: Prepping the dish</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>            
+                            <h4 class="modal-title step-4" data-step="4">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1.25 cups</span> low-sodium chicken broth
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 box</span> box roasted garlic-and-olive oil cous cous
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>12-in cast iron skillet</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>medium bowl</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>cover for the medium bowl</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Preheat oven to 425 degrees F. <br>Bring broth to a boil in a 12-inch cast iron skillet. <br>Pour over couscous in a medium bowl; cover and set aside.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 tbs</span> vegetable oil
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">6 large</span> bone-in chicken thighs
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1.5 tsp</span> salt
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">3/4 tsp</span> ground pepper
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>plate</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stove</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Heat oil in skillet over medium-high heat until very hot. <br>Sprinkle chicken with salt and pepper. <br>Place chicken in skillet, skin sides down, and cook 10 minutes or until skin is browned and crispy. <br>Turn chicken over and cook 4 minutes. <br>Transfer chicken to a plate; discard drippings.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+</h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> salsaz Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>fork</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Fluff couscous with a fork. <br>Serve chicken and peppers on couscous, and top with desired amount of salsa.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1/4 cup</span> fresh parsley
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/4 cup</span> fresh basil
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 tbs</span> capers
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1.5 tbs</span> fresh lemon juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    salt & pepper <span class="spanBold">to taste</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Stir together parsley, basil, green onion, olive oil, capers, and lemon juice. <br>Season to taste with salt and pepper.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 4)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
         <header class="headerRecipe r00005bg">
             <a class="backbtn" href="/category/poultry.html">
                 <div class="backChev">
@@ -68,6 +280,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
             
         </header>
@@ -118,6 +340,10 @@
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
                         <p class="recipeText">Hot sauce - to taste</p>
+                    </div>
+                    <div class="recipeIngItemDiv">
+                        <p class="recipeBullet">•</p>
+                        <p class="recipeText">Butter - 1/4 stick</p>
                     </div>
                     
                     <div class="recipeIngItemDiv">
@@ -174,42 +400,7 @@
                         <p class="recipeIstBullet">4.</p>
                         <p class="recipeIstText">Stir together <span class="itAnIngredient">parsley</span>, <span class="itAnIngredient">basil</span>, <span class="itAnIngredient">green onion</span>, <span class="itAnIngredient">olive oil</span>, <span class="itAnIngredient">capers</span>, and <span class="itAnIngredient">lemon juice</span>. Season to taste with <span class="itAnIngredient">salt</span> and <span class="itAnIngredient">pepper</span>.</p>
                     </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Place <span class="itAnIngredient">chicken</span> in the refrigerator so it marinates overnight.</p>
-                    </div>
                     
-                    <div class="recipeInstSubHeader">
-                        <h5>Cooking</h5>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">1.</p>
-                        <p class="recipeIstText">Preheat the oven to 350 degrees.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">2.</p>
-                        <p class="recipeIstText">Place the <span class="itAnIngredient">chicken</span> in a baking pan. I’d recommend placing the skin down for the thighs.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Add a quarter stick of <span class="itAnIngredient">butter</span>, I’d recommend cutting it into small pieces and strategically place then around the <span class="itAnIngredient">chicken</span>. </p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">4.</p>
-                        <p class="recipeIstText">Add 1/2 cup of <span class="itAnIngredient">water</span> to the pan and 2 tablespoons of <span class="itAnIngredient">apple cider vinegar</span> for flavor.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Cover the baking pan in aluminum foil.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">6.</p>
-                        <p class="recipeIstText">Bake the <span class="itAnIngredient">chicken</span> on one side for an hour. After the initial hour remove the aluminum foil. Turn the chicken so the other side is down. Bake for another hour.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">7.</p>
-                        <p class="recipeIstText">After two hours of cooking they should be done!</p>
-                    </div>
                     
                 </div>
             </div>
@@ -227,6 +418,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    

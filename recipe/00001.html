@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,322 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1: Prepping the Meat</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2: Time to Cook</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Step 5</h4>
+                            <h4 class="modal-title step-6" data-step="6">Step 6</h4>
+                            <h4 class="modal-title step-7" data-step="7">Step 7</h4>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 </span> ribeye
+                                    <span class="ingToolSpacer">  -  </span>
+                                    salt
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>cooking sheet</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Place ribeye on wire rack on a baking sheet. Salt the ribeye steak liberally on both sides. <br>Let the meat sit for half an hour at room temperature.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <!--<img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> orange Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
+                                </p>-->
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Preheat oven to 250℉.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1</span> ribeye
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>baking rack</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>food thermometer</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Place steak on rack into oven for about an hour or until the steak’s internal temperature is 115℉ and looks a little ugly.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 tbs</span> beef lard
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1</span> ribeye
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>cast iron skillet</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Heat a cast iron skillet and melt beef lard. Allow the skillet to get smoking hot and then place steak in the center of the skillet. <br>Let the steak sit for about a minute or until a golden brown crust forms on the bottom. <br>Flip the steak and repeat.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 generous pats (~1/4 stick)</span> butter
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 clove</span> garlic
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">couple whole</span> thyme sprigs
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>cast iron skillet</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>spoon</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Reduce heat slightly and place a large pat of butter into the skillet next to the steak; slightly tilt the pan to contain the liquid butter separate from the steak. <br>Add garlic and thyme. <br>Allow butter to melt and combine with the garlic and thyme. <br>Using a spoon, scoop and pour the butter over the steak to baste it.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-6" data-step="6">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 pat (~1/8 stick)</span> butter
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>new pan</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>aluminum foil</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Remove steak from the heat. Add a generous pat of butter to the top of the steak to form a butter blanket. Take the garlic clove and thyme sprig from the skillet and place on top of the steak. Cover with aluminum foil. Allow the steak to take a little nap for 10 minutes.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-7" data-step="7">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 tbs</span> beef lard
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1</span> ribeye
+                                </p>-->
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>knife</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>serving platform</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                After ten minutes have passed, remove tin foil and proceed with carving. <br>Using a large knife, carefully cut the bone away from the rest of the steak. <br>Then, slice steak into 2 inch slices, fan to make it look pretty, and then eat.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 6)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-6" data-step="6" onclick="sendEvent('#demo-modal-3', 5)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-6" data-step="6" onclick="sendEvent('#demo-modal-3', 7)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-7" data-step="7" onclick="sendEvent('#demo-modal-3', 6)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-7" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 7)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
+        
         <header class="headerRecipe r00001bg">
             <a class="backbtn" href="/category/meats.html">
                 <div class="backChev">
@@ -68,6 +375,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -77,7 +394,7 @@
         <section class="recipeContainer">
             <div class="recipeIngredients">
                 <div class="recipeIngDiv">
-                    <h4>Ingredients</h4>
+                    <h4 class="subHeadersRecipes">Ingredients</h4>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
                         <p class="recipeText">2 inch bone-in ribeye steak</p>
@@ -107,32 +424,32 @@
             </div>
             <div class="recipeInstructions">
                 <div class="recipeInstDiv">
-                    <h4>Instructions</h4>
+                    <h4 class="subHeadersRecipes">Instructions</h4>
                     <div class="recipeInstSubHeader">
                         <h5>Prepping the Meat</h5>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">1.</p>
-                        <p class="recipeIstText">Place <span class="itAnIngredient">ribeye</span> on wire rack on a baking sheet. <span class="itAnIngredient">Salt</span> the ribeye steak liberally on both sides. Let meat sit for half an hour at room temperature.</p>
+                        <p class="recipeIstText">Place ribeye on wire rack on a baking sheet. Salt the ribeye steak liberally on both sides. Let the meat sit for half an hour at room temperature.</p>
                     </div>
                     <div class="recipeInstSubHeader">
                         <h5>Time to Cook</h5>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">1.</p>
-                        <p class="recipeIstText">Preheat oven to 250 degree fahrenheit.</p>
+                        <p class="recipeIstText">Preheat oven to 250℉.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">2.</p>
-                        <p class="recipeIstText">Place <span class="itAnIngredient">steak</span> on rack into oven for about an hour or until the steak’s internal temperature is 115 degrees fahrenheit and looks a little ugly.</p>
+                        <p class="recipeIstText">Place <span class="itAnIngredient">steak</span> on rack into oven for about an hour or until the steak’s internal temperature is 115℉ and looks a little ugly.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Heat a cast iron skillet and melt <span class="itAnIngredient">beef lard</span>. Allow the skillet to get smoking hot and then place <span class="itAnIngredient">steak</span> in the center of the skillet. Let the steak sit for about a minute or until a golden brown crust forms on the bottom. Flip steak and repeat.</p>
+                        <p class="recipeIstText">Heat a cast iron skillet and melt beef lard. Allow the skillet to get smoking hot and then place steak in the center of the skillet. Let the steak sit for about a minute or until a golden brown crust forms on the bottom. Flip the steak and repeat.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">4.</p>
-                        <p class="recipeIstText">Reduce heat slightly and place a large pat of <span class="itAnIngredient">butter</span> into the skillet next to the steak. Add <span class="itAnIngredient">garlic</span> and <span class="itAnIngredient">thyme</span>. Allow butter to melt and combine with the <span class="itAnIngredient">garlic</span> and <span class="itAnIngredient">thyme</span>. Using a spoon, scoop and pour the <span class="itAnIngredient">butter</span> over the steak to baste it.</p>
+                        <p class="recipeIstText">Reduce heat slightly and place a large pat of butter into the skillet next to the steak; slightly tilt the pan to contain the liquid butter separate from the steak. Add garlic and thyme. Allow butter to melt and combine with the garlic and thyme. Using a spoon, scoop and pour the butter over the steak to baste it.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">5.</p>
@@ -151,15 +468,25 @@
         </section>
         
         <section class="imageSection">
-            <h4>Pictures</h4>
+            <h4 class="subHeadersRecipes">Pictures</h4>
             <div class="imageContainer">
-                <img class="imagOfFood" src="/imgs/00001.01.jpg"/>
                 <img class="imagOfFood" src="/imgs/00001.01.jpg"/>
             </div>
         </section>
     
         <footer class="simpleFooter recipeFooter">
         </footer>
-    
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
+        
     </body>
 </html>    

@@ -195,20 +195,3 @@ button{
 .ingToolSpacer{
     padding: 0px 5px;
 }
-
-.modalPageBtn{
-    padding: 10px 20px;
-    margin: 0px !important;
-    background-color: rgba(255,255,255,1) !important;
-    background-image: none !important;
-    border-radius 2px;
-    border: 1px solid rgba(255,255,255,0);
-    text-decoration-style: none;
-    opacity: 0.9;
-    outline: none !important;
-    text-shadow: none !important;
-}
-
-.modalPageBtn:hover{
-    opacity: 1;
-}

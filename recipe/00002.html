@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,291 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Step 5</h4>
+                            <h4 class="modal-title step-7" data-step="6">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">4 lbs</span> pork shoulder
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 tbs</span> paprika
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 tbs</span> brown sugar
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tsp</span> black pepper
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tsp</span> cayenne pepper
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tsp</span> garlic powder
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tsp</span> onion powder
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tsp</span> kosher salt
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>mixing bowl for spices</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>large mixing bowl or baking sheet</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Mix together all of the dried spices and rub into all sides of the pork.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1/4 cups</span> apple cider vinegar
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">3/4 cups</span> water
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>slow cooker</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Place vinegar and water in the bottom of slow cooker.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">4 lbs</span> pork shoulder
+                                    <span class="ingToolSpacer">  -  </span>
+                                    hot sauce <span class="spanBold">of choice</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>slow cooker from last step</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Carefully add pork (so you don't wash off spices) in the certer of the slow cooker. <br>Finally, add hot sauce of choice.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    hot sauce <span class="spanBold">as required</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>timer</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>tongue for tasting</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Cover and cook on low for about 8 hours. <br>However, 6 hours into the cooking process taste broth to determine the desire for additional hot sauce.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <!--<img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin *winky face* Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels... if you know what I mean
+                                </p>-->
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>large concave plate or container</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>forks or shredding tool</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Remove pork from slow cooker and shred (remove any large fatty pieces and discard).
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-6" data-step="6">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <!--<img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin *winky face* Juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels... if you know what I mean
+                                </p>-->
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>rounded serving spoon</span>
+                            
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Add juices from slow cooker as desired. <br>Bon Appetit.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="3" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 6)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-6" data-step="6" onclick="sendEvent('#demo-modal-3', 5)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-6" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 6)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
+        
         <header class="headerRecipe r00002bg">
             <a class="backbtn" href="/category/meats.html">
                 <div class="backChev">
@@ -68,6 +344,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -129,27 +415,27 @@
                     <h4>Instructions</h4>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">1.</p>
-                        <p class="recipeIstText">Mix together all of the <span class="itAnIngredient">dried spices</span> and rub into all sides of the <span class="itAnIngredient">pork</span>.</p>
+                        <p class="recipeIstText">Mix together all of the dried spices and rub into all sides of the pork.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">2.</p>
-                        <p class="recipeIstText">Place <span class="itAnIngredient">vinegar</span> and <span class="itAnIngredient">water</span> in bottom of slow cooker.</p>
+                        <p class="recipeIstText">Place vinegar and water in the bottom of slow cooker.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Carefully add <span class="itAnIngredient">pork</span> (so you don't wash off spices). Add <span class="itAnIngredient">hot sauce</span> of choice.</p>
+                        <p class="recipeIstText">Carefully add pork (so you don't wash off spices) in the certer of the slow cooker. Finally, add hot sauce of choice.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">4.</p>
-                        <p class="recipeIstText">Cover and cook on low for about 8 hours. After 6 hours taste broth to determine need for additional <span class="itAnIngredient">hot sauce</span>.</p>
+                        <p class="recipeIstText">Cover and cook on low for about 8 hours. However, 6 hours into the cooking process taste broth to determine the desire for additional hot sauce.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Remove <span class="itAnIngredient">pork</span> and shred (remove any large fatty pieces and discard).</p>
+                        <p class="recipeIstText">Remove pork from slow cooker and shred (remove any large fatty pieces and discard).</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">6.</p>
-                        <p class="recipeIstText">Add <span class="itAnIngredient">juices</span> from slow cooker as desired.</p>
+                        <p class="recipeIstText">Add juices from slow cooker as desired.</p>
                     </div>
                 </div>
             </div>
@@ -167,6 +453,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    

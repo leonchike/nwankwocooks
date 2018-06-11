@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,259 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">3 lbs</span> baby spinach
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 in</span> water
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>8-quart pot</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stirring spoon</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stove top</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Cook spinach in 2 batches in 1 inch of boiling salted water in an 8-quart pot, stirring constantly, until wilted, 1 to 2 minutes.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">cold</span> running water
+                            
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>colander</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>hands for squeezing</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>cutting board</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Drain in a colander and rinse under cold running water until cool. <br>Squeeze small handfuls of spinach to remove as much moisture as possible, then coarsely chop.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1.5 cups</span> whole milk
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 cup</span> heavy cream
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 small</span> onion
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 small</span> onion
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>small saucepan</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>3-quart saucepan</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stirring device</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife or vidalia (for the lazy)</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Heat milk and cream in a small saucepan over moderate heat, stirring, until warm. <br>Meanwhile, cook onion in butter in a 3-quart heavy saucepan over moderately low heat, stirring occasionally, until softened, about 4 minutes.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1/4 cup</span> flour
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>whisk (optional)</span>
+        
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Whisk in flour and cook roux, whisking for 3 minutes. <br>Add warm milk mixture in a fast stream, whisking constantly to prevent lumps, and simmer, whisking, until thickened, 3 to 4 minutes.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1/8 tsp</span> nutmeg
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">to taste ingredients:</span> salt, pepper, garam masala, tarragon, ghost pepper hot sauce, cumin
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <!--<!--<img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Stir in nutmeg and to taste ingredients, continue cooking and stirring, until heated throughly.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 5)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
+        
         <header class="headerRecipe r00003bg">
             <a class="backbtn" href="/category/veggies.html">
                 <div class="backChev">
@@ -68,6 +312,17 @@
                         </div>
                     </div>
                 </div>
+                
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->         
+                
             </div>
         </header>
         
@@ -120,7 +375,7 @@
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">1.</p>
-                        <p class="recipeIstText">Cook <span class="itAnIngredient">spinach</span> in 2 batches in 1 inch of boiling <span class="itAnIngredient">salted water</span> in an 8-quart pot, stirring constantly, until wilted, 1 to 2 minutes.</p>
+                        <p class="recipeIstText">Cook spinach in 2 batches in 1 inch of boiling salted water in an 8-quart pot, stirring constantly, until wilted, 1 to 2 minutes.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">2.</p>
@@ -128,15 +383,15 @@
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Heat <span class="itAnIngredient">milk</span> and <span class="itAnIngredient">cream</span> in a small saucepan over moderate heat, stirring, until warm. Meanwhile, cook <span class="itAnIngredient">onion</span> in <span class="itAnIngredient">butter</span> in a 3-quart heavy saucepan over moderately low heat, stirring occasionally, until softened, about 4 minutes.</p>
+                        <p class="recipeIstText">Heat milk and cream in a small saucepan over moderate heat, stirring, until warm. Meanwhile, cook onion in butter in a 3-quart heavy saucepan over moderately low heat, stirring occasionally, until softened, about 4 minutes.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">4.</p>
-                        <p class="recipeIstText">Whisk in <span class="itAnIngredient">flour</span> and cook roux, whisking for 3 minutes. Add warm <span class="itAnIngredient">milk mixture</span> in a fast stream, whisking constantly to prevent lumps, and simmer, whisking, until thickened, 3 to 4 minutes.</p>
+                        <p class="recipeIstText">Whisk in flour and cook roux, whisking for 3 minutes. Add warm milk mixture in a fast stream, whisking constantly to prevent lumps, and simmer, whisking, until thickened, 3 to 4 minutes.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Stir in <span class="itAnIngredient">nutmeg</span>, <span class="itAnIngredient">spinach</span>, and <span class="itAnIngredient">salt</span> and <span class="itAnIngredient">pepper</span> to taste and cook, stirring, until heated through.</p>
+                        <p class="recipeIstText">Stir in nutmeg and to taste ingredients, continue cooking and stirring, until heated throughly.</p>
                     </div>
                     
                 </div>
@@ -155,6 +410,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    

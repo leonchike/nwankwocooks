@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,314 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Step 5</h4>
+                            <h4 class="modal-title step-6" data-step="6">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> orange
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Preheat the oven to 400 degrees F.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 lbs</span> chicken tenders 
+                                    <span class="ingToolSpacer">  -  </span>
+                                    paprika <span class="spanBold">to cover chicken</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    sage <span class="spanBold">to cover chicken</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    oregano <span class="spanBold">to cover chicken</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    salt & peper <span class="spanBold">to cover chicken</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>cutting board</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Sprinkle the chicken tenders with paprika, sage, oregano, salt and pepper.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold"></span>olive oil
+                                    
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>12-in cast iron</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stove</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stirring spoon</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>tongs</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Heat a 12-inch cast-iron pan over medium-high heat and add the olive oil. <br>When the oil begins to swirl, add the seasoned chicken and saute until cooked through, about 4 minutes on the first side and 3 minutes on the second side. <br>Remove the chicken to a plate with tongs, leaving the oil in the pan. <br>Rest the chicken for a few minutes, and then chop into 1/2-inch cubes.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 cups</span> onions
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2</span> carrots
+                                    <span class="ingToolSpacer">  -  </span>
+                                    salt and pepper <span class="spanBold">to taste</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">4</span> garlic
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 tbs</span> flour
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>timer</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                To the same pan, add the onions, peas and carrots and sprinkle with salt and pepper. <br>Stir and cook until the onions become tender, 3 to 5 minutes. <br>Add the garlic and cook until fragrant, about 1 minute longer. <br>Sprinkle in the flour and stir until the flour dissolves into the vegetables and juices.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">4 cups</span> chicken stock
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 cups</span> heavy cream
+                                    <span class="ingToolSpacer">  -  </span>
+                                    salt <span class="spanBold">to taste</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    hot sauce <span class="spanBold">to taste</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    oregano <span class="spanBold">to taste</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Add the chicken stock and raise to a simmer, stirring until thickened. <br>Once the liquid has thickened, stir in the heavy cream. <br>Season with salt, if needed. <br>Add hot sauce (tropics & ghost pepper) and extra spices- usually pepper & a lot of oregano.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-6" data-step="6">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> pie crust
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 </span> egg
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>rolling pin</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Return the chicken to the pan. <br>Unfold the pie crust and place over the top of the filling, tucking the excess edges inside the pan. <br>Brush the crust evenly with the egg wash. <br>Using a knife, gently cut 3 vents in the top of the crust. <br>Place in the oven and bake until the crust is golden brown, about 30 minutes.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 6)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-6" data-step="6" onclick="sendEvent('#demo-modal-3', 5)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-6" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 6)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
         <header class="headerRecipe r00006bg">
             <a class="backbtn" href="/category/poultry.html">
                 <div class="backChev">
@@ -68,6 +367,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -88,7 +397,7 @@
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
-                        <p class="recipeText">Frozen Pearl Onions - 1 1/2 cups</p>
+                        <p class="recipeText">Frozen Pearl Onions - 2 cups</p>
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
@@ -100,7 +409,7 @@
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
-                        <p class="recipeText">Minced Garlic - 3 cloves</p>
+                        <p class="recipeText">Minced Garlic - 4 cloves</p>
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
@@ -108,11 +417,11 @@
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
-                        <p class="recipeText">Low-sodium Chicken Stock - 3 cups</p>
+                        <p class="recipeText">Low-sodium Chicken Stock - 4 cups</p>
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
-                        <p class="recipeText">Heavy Cream - 1 1/2 cups</p>
+                        <p class="recipeText">Heavy Cream - 2 cups</p>
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
@@ -145,19 +454,23 @@
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">2.</p>
-                        <p class="recipeIstText">Sprinkle the <span class="itAnIngredient">chicken tenders</span> with <span class="itAnIngredient">paprika</span>, <span class="itAnIngredient">sage</span>, <span class="itAnIngredient">oregano</span>, <span class="itAnIngredient">salt</span> and <span class="itAnIngredient">pepper</span>.</p>
+                        <p class="recipeIstText">Sprinkle the chicken tenders with paprika, sage, oregano, salt and pepper.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Heat a 12-inch cast-iron pan over medium-high heat and add the <span class="itAnIngredient">olive oil</span>. When the oil begins to swirl, add the seasoned <span class="itAnIngredient">chicken</span> and saute until cooked through, about 4 minutes on the first side and 3 minutes on the second side. Remove the <span class="itAnIngredient">chicken</span> to a plate with tongs, leaving the oil in the pan. Rest the chicken for a few minutes, and then chop into 1/2-inch cubes.</p>
+                        <p class="recipeIstText">Heat a 12-inch cast-iron pan over medium-high heat and add the olive oil. When the oil begins to swirl, add the seasoned chicken and saute until cooked through, about 4 minutes on the first side and 3 minutes on the second side. Remove the chicken to a plate with tongs, leaving the oil in the pan. Rest the chicken for a few minutes, and then chop into 1/2-inch cubes.</p>
                     </div>
                      <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">4.</p>
-                         <p class="recipeIstText">To the same pan, add the <span class="itAnIngredient">onions</span>, <span class="itAnIngredient">peas</span> and <span class="itAnIngredient">carrots</span> and sprinkle with <span class="itAnIngredient">salt</span> and <span class="itAnIngredient">pepper</span>. Stir and cook until the <span class="itAnIngredient">onions</span> become tender, 3 to 5 minutes. Add the <span class="itAnIngredient">garlic</span> and cook until fragrant, about 1 minute longer. Sprinkle in the <span class="itAnIngredient">flour</span> and stir until the flour dissolves into the vegetables and juices. Add the <span class="itAnIngredient">chicken stock</span> and raise to a simmer, stirring until thickened. Once the liquid has thickened, stir in the <span class="itAnIngredient">heavy cream</span>. Season with <span class="itAnIngredient">salt</span>, if needed. Add <span class="itAnIngredient">hot sauce</span> (tropics & ghost pepper) and extra spices- usually pepper & a lot of oregano.</p>
+                         <p class="recipeIstText">To the same pan, add the onions, peas and carrots and sprinkle with salt and pepper. Stir and cook until the onions become tender, 3 to 5 minutes. Add the garlic and cook until fragrant, about 1 minute longer. Sprinkle in the flour and stir until the flour dissolves into the vegetables and juices. </p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Return the <span class="itAnIngredient">chicken</span> to the pan. Unfold the <span class="itAnIngredient">pie crust</span> and place over the top of the filling, tucking the excess edges inside the pan. Brush the crust evenly with the <span class="itAnIngredient">egg wash</span>. Using a knife, gently cut 3 vents in the top of the crust. Place in the oven and bake until the crust is golden brown, about 30 minutes.</p>
+                         <p class="recipeIstText">Add the chicken stock and raise to a simmer, stirring until thickened. Once the liquid has thickened, stir in the heavy cream. Season with salt, if needed. Add hot sauce (tropics & ghost pepper) and extra spices- usually pepper & a lot of oregano.</p>
+                    </div>
+                    <div class="recipeIstItemDiv">
+                        <p class="recipeIstBullet">6.</p>
+                        <p class="recipeIstText">Return the chicken to the pan. Unfold the pie crust and place over the top of the filling, tucking the excess edges inside the pan. Brush the crust evenly with the egg wash. Using a knife, gently cut 3 vents in the top of the crust. Place in the oven and bake until the crust is golden brown, about 30 minutes.</p>
                     </div>
                     
                 </div>
@@ -176,6 +489,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    
