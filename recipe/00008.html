@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,414 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Step 5</h4>
+                            <h4 class="modal-title step-6" data-step="6">Step 6</h4>
+                            <h4 class="modal-title step-7" data-step="7">Step 7</h4>
+                            <h4 class="modal-title step-8" data-step="8">Step 8</h4>
+                            <h4 class="modal-title step-9" data-step="9">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> yogurt
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 finely chopped</span> shallots
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">a couple grates</span> lemon zest
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/2 a lemon</span> lemon juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/2 tsp</span> cardamom
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tsp</span> sumac
+                                    <span class="ingToolSpacer">  -  </span>
+                                    salt & pepper <span class="spanBold">to taste</span>
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">a generous drizzle</span> olive oil
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>medium bowl</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>measuring spoons</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>cutting board</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                In medium bowl, combine yogurt, shallots, lemon zest and juice, cardamom, sumac, dill, salt and pepper, and olive oil. Set aside.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1</span> whole chicken 
+                                    
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>cutting board</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>kitchen shears</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Grab raw whole chicken and place on cutting board. <br>Using a sharp pair of kitchen shears, cut along each side of the spine. <br>Remove the spine. Snip the breast bone and then crack in half so that the chicken lays flat.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> yogurt
+                                    
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>plastic gallon storage bag</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Place chicken into a plastic gallon storage bag. <br>Scoop yogurt marinade into bag. <br>Seal bag completely and massage yogurt marinade into chicken to ensure it is completely coated.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>cooking sheet</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>refrigerator</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Place the plastic bag containing the chicken and its yogurt marinade onto a cooking sheet. <br>Refrigerate overnight.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>oven</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Roast at 450℉ for 45-55 minutes. <br>This is a really great time to make the garlic sauce. <br>See the recipe below!
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-6" data-step="6">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Remove chicken from oven and let it rest for at least 10 minutes. <br>The skin should be crispy.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-7" data-step="7">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> cumin
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> towels
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>knife</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                After it is slightly cooled, slice the chicken in half and carve the thigh and drumstick off. <br>Serve with a heaping side of garlic sauce (instructions to follow).
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-8" data-step="8">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 cloves</span> garlic
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/2 cup</span> canola oil
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>food processor</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Peel and separate the cloves of 2 heads of garlic. <br>Puree the heads in a food processor. <br>Once they are a paste, add a ½ cup of the canola oil very slowly.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-9" data-step="9">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1/4 cup</span> lemon juice
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/2 cup</span> canola oil
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Add the lemon juice and drizzle the remaining canola oil in very slowly. The mixture should be a thick spreadable paste. <br>Set aside until ready to use.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 6)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-6" data-step="6" onclick="sendEvent('#demo-modal-3', 5)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-6" data-step="6" onclick="sendEvent('#demo-modal-3', 7)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-7" data-step="7" onclick="sendEvent('#demo-modal-3', 6)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-7" data-step="7" onclick="sendEvent('#demo-modal-3', 8)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-8" data-step="8" onclick="sendEvent('#demo-modal-3', 7)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-8" data-step="8" onclick="sendEvent('#demo-modal-3', 9)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-9" data-step="9" onclick="sendEvent('#demo-modal-3', 8)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-9" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 9)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
         <header class="headerRecipe r00008bg">
             <a class="backbtn" href="/category/poultry.html">
                 <div class="backChev">
@@ -68,6 +467,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -180,7 +589,7 @@
                         <p class="recipeIstText">Remove chicken from oven and let it rest for at least 10 minutes. The skin should be crispy.</p>
                     </div>
                     <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">7.</p>
+                        <p class="recipeIstBullet">3.</p>
                         <p class="recipeIstText">After it is slightly cooled, slice the chicken in half and carve the thigh and drumstick off. Serve with a heaping side of garlic sauce.</p>
                     </div>
                     
@@ -212,6 +621,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    

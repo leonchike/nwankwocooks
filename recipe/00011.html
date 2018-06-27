@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,11 +26,242 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
-        <header class="headerRecipe">
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold"></span>water
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>stove</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>large pot</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Start boiling a large pot of water (~8qts).
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">5 lbs</span> potatoes
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>vegerable peeler</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Peel the potatoes. Cut peeled potatoes into fourths. Boil potatoes until soft (~30 min).
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> orange
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> cumin
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>colander</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Pour potatoes into a colander. Pour potatoes back into pot.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 stick</span> butter
+                                    <span class="ingToolSpacer">  -  </span>
+                                    milk <span class="spanBold">to taste</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>hand masher</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Mash with hand masher. Cut up stick of butter and add into potatoes, continue mashing. Pour milk a little at a time while mashing until desired consistency.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    salt <span class="spanBold">to taste</span>
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Add salt - More salt than you think you need. Keep tasting/salting until 100% perfection.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 5)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
+        <header class="headerRecipe r00011bg">
             <a class="backbtn" href="/category/starch.html">
                 <div class="backChev">
                     <img src="/imgs/back_chevron.svg"/>
@@ -68,6 +294,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -95,6 +331,10 @@
                         <p class="recipeBullet">•</p>
                         <p class="recipeText">Water ~ 8 qts</p>
                     </div>
+                    <div class="recipeIngItemDiv">
+                        <p class="recipeBullet">•</p>
+                        <p class="recipeText">Salt - to taste</p>
+                    </div>
                     
 
                 </div>
@@ -109,47 +349,19 @@
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">2.</p>
-                        <p class="recipeIstText">Peel the potatoes.</p>
+                        <p class="recipeIstText">Peel the potatoes. Cut peeled potatoes into fourths. Boil potatoes until soft (~30 min).</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Cut peeled potatoes into fourths.</p>
+                        <p class="recipeIstText">Pour potatoes into a colander. Pour potatoes back into pot.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">4.</p>
-                        <p class="recipeIstText">Boil potatoes until soft (~30 min).</p>
+                        <p class="recipeIstText">Mash with hand masher. Cut up stick of butter and add into potatoes, continue mashing. Pour milk a little at a time while mashing until desired consistency.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Pour into colander.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">6.</p>
-                        <p class="recipeIstText">Pour potatoes back into pot.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">7.</p>
-                        <p class="recipeIstText">Mash with hand masher.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">8.</p>
-                        <p class="recipeIstText">Cut up stick of butter and add into potatoes, continue mashing.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">9.</p>
-                        <p class="recipeIstText">Pour milk a little at a time while mashing until desired consistency.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">10.</p>
-                        <p class="recipeIstText">Add salt - More salt than you think you need.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">11.</p>
-                        <p class="recipeIstText">Keep tasting/salting until 100% perfection.</p>
-                    </div>
-                    <div class="recipeIstItemDiv">
-                        <p class="recipeIstBullet">12.</p>
-                        <p class="recipeIstText">Done!</p>
+                        <p class="recipeIstText">Add salt - More salt than you think you need. Keep tasting/salting until 100% perfection.</p>
                     </div>
                     
                 </div>
@@ -168,6 +380,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    

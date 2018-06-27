@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,245 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Step 4</h4>
+                            <h4 class="modal-title step-5" data-step="5">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1/8 cup</span> unsalted butter
+                                    
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>large skillet</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stove top</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Melt butter in heavy large skillet over medium heat.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">5 tsp or to taste</span> minced garlic 
+                                    
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>timer</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Add minced garlic and saute about 2-3 minutes until barely golden/brown.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">12-14 pieces</span> small sized
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1.5 cups</span> low sodium chicken broth
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>stirring spoon</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Add bok choy and chicken broth and simmer until bok choy is tender. <br>Cover the skillet while the bok choy cooks. <br>Turning occasionally, cook for about 12 minutes.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    salt & pepper <span class="spanBold">to taste</span>
+                                    
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>optional clothes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>shoes</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>gym</span>
+                                </p>-->
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Season with salt and pepper once the cooking is done.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-5" data-step="5">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    salt & pepper<span class="spanBold">to taste</span>
+                                    
+                                </p>
+                                <h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>bowl</span>
+                                    
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Move the bok choy and it's broth to a bowl to eat!
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 5)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-5" data-step="5" onclick="sendEvent('#demo-modal-3', 4)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-5" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 5)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
         <header class="headerRecipe r00018bg">
             <a class="backbtn" href="/category/veggies.html">
                 <div class="backChev">
@@ -48,7 +278,7 @@
             <div class="headerTitle">
                 <h1>Baby Bok Choy with Garlic</h1>
                 <div class="headerTitleDivider"></div>
-                <h2>This super easy recipe produces crispy, flavorful brussel sproats. Even doable for brand-new cooks, and you won't believe how great they taste!</h2>
+                <h2>This Baby Bok Choy comes out tender and savory - Perfect to pair with your favorite chicken or pasta dish! </h2>
                 <div class="headerTitleDivider"></div>
                 <div class="statsDiv">
                     <div class="statsRow">
@@ -68,6 +298,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -81,7 +321,7 @@
 
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
-                        <p class="recipeText">unsalted cutter - 1/8 cup</p>
+                        <p class="recipeText">Unsalted cutter - 1/8 cup</p>
                     </div>
                     <div class="recipeIngItemDiv">
                         <p class="recipeBullet">•</p>
@@ -111,15 +351,15 @@
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">3.</p>
-                        <p class="recipeIstText">Add bok choy and chicken broth and simmer until bok choy is tender, turning occasionally, about 8 minutes.</p>
+                        <p class="recipeIstText">Add bok choy and chicken broth and simmer until bok choy is tender. Cover the skillet while the bok choy cooks. Turning occasionally, cook for about 12 minutes.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">4.</p>
-                        <p class="recipeIstText">Season with salt and pepper.</p>
+                        <p class="recipeIstText">Season with salt and pepper once the cooking is done.</p>
                     </div>
                     <div class="recipeIstItemDiv">
                         <p class="recipeIstBullet">5.</p>
-                        <p class="recipeIstText">Use a slotted spoon to serve.</p>
+                        <p class="recipeIstText">Move the bok choy and it's broth to a bowl to eat!</p>
                     </div>
                     
                 </div>
@@ -138,6 +378,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>    
