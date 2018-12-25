@@ -9,11 +9,6 @@
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
         <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/siteresources/nwankwocooks+site+resources/og.image.png" />
         
-        <link href="/css/global.css" rel="stylesheet" type="text/css">
-        <link href="/css/home.css" rel="stylesheet" type="text/css">
-        <link href="/css/category.css" rel="stylesheet" type="text/css">
-        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
-        
         <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
         
@@ -31,10 +26,250 @@
         </script>
         
 		<!-- AFTER TAG MANAGER CODE INSERT THIS CODE -->
+        
+        <!-- Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <style>
+        .m-progress-bar {
+            min-height: 1em;
+            background: #c12d2d;
+            width: 5%;
+        }
+        </style>
+        <!-- Modal -->
+        
+        <!-- Local CSS -->
+        <link href="/css/global.css" rel="stylesheet" type="text/css">
+        <link href="/css/home.css" rel="stylesheet" type="text/css">
+        <link href="/css/category.css" rel="stylesheet" type="text/css">
+        <link href="/css/recipe.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <link href="/css/recipe_modal.css" rel="stylesheet" type="text/css">
+        <!-- Recipe Modal CSS -->
+        <!-- Local CSS -->
 		
     </head>
     
     <body>
+        
+        <!-- MODAL STARTS HERE -->
+        
+        <form class="modal multi-step" id="demo-modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-default rmodalClose" data-dismiss="modal">Close</button>
+                        <div class="rModalHeaderWrapper">
+                            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+                            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+                            <h4 class="modal-title step-3" data-step="3">Step 3</h4>
+                            <h4 class="modal-title step-4" data-step="4">Final Step</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body step-1" data-step="1">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> flour
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">8 strips</span> bacon
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>heavy sauce pan</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>whisk</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>timer</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>stove top</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>george foreman grill (for bacon drippings)</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Make a roux by whisking the flour and 3/4 cup bacon drippings together in a large, heavy saucepan over medium-low heat to form a smooth mixture. Cook the roux, whisking constantly, until it turns a rich mahogany brown color. This can take 20 to 30 minutes; watch heat carefully and whisk constantly or roux will burn. Remove from heat; continue whisking until mixture stops cooking.
+                                </p>
+                            
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="modal-body step-2" data-step="2">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">1 cup</span> celery, coarsely chopped 
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 large</span> onion, coarsely chopped
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 large</span> green bell pepper, coarsely chopped
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 cloves</span> garlic
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 lb</span> andouille sausage
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>food processor</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>knife</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Place the celery, onion, green bell pepper, and garlic into the work bowl of a food processor, and pulse until the vegetables are very finely chopped. Stir the vegetables into the roux, and mix in the sausage. Bring the mixture to a simmer over medium-low heat, and cook until vegetables are tender, 10 to 15 minutes. Remove from heat, and set aside.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-3" data-step="3">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">3 quarts</span> water
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">6 cubes</span> beef bouillion
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 tbs</span> sugar
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">to taste</span> salt
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">to taste</span> hot pepper sauce
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/2 tsp or to taste</span> cajun seasoning (tony chachere's)
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">4 pieces</span> bay leaves
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1/2 tsp</span> thyme leaves, dried
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 can (14.5 oz)</span> stewed tomatoes
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 can (6 oz)</span> tomato sauce
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">4 tsp</span> gumbo file powder
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>dutch oven</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>tasting spoon</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Bring the water and beef bouillon cubes to a boil in a large Dutch oven or soup pot. Stir until the bouillon cubes dissolve, and whisk the roux mixture into the boiling water. Reduce heat to a simmer, and mix in the sugar, salt, hot pepper sauce, Cajun seasoning, bay leaves, thyme, stewed tomatoes, and tomato sauce. Simmer the soup over low heat for 1 hour; mix in 2 teaspoons of file gumbo powder at the 45-minute mark.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-body step-4" data-step="4">
+                        <div class="recipeModalContent">
+                            <div class="rModalContentHeading">
+                                <!--<h5>
+                                    Ingredients
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/steak.svg"/>
+                                <p>
+                                    <span class="spanBold">2 tbs</span> bacon drippings
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 packages (20 oz total)</span> okra
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">1 lbs</span> lump crabmeat
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">3 lbs</span> medium shrimp, uncooked, peeled and deveined
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 tbs</span> worcestershire sauce
+                                    <span class="ingToolSpacer">  -  </span>
+                                    <span class="spanBold">2 tbs</span> gumbo file powder
+                                </p>
+                                <!--<h5 id="rmh5tools">
+                                    Tools
+                                </h5>-->
+                                <img class="rModalHeadingIcon" src="/imgs/icons/knife-2.svg"/>
+                                <p>
+                                    <span>skillet</span>
+                                    <span class="ingToolSpacer">   -   </span>
+                                    <span>slotted spoon</span>
+                                </p>
+                                <div class="rModalHDivider"></div>
+                            </div>
+                            <div class="rModalContentBody">
+                                <p>
+                                Meanwhile, melt 2 tablespoons of bacon drippings in a skillet, and cook the okra with vinegar over medium heat for 15 minutes; remove okra with slotted spoon, and stir into the simmering gumbo. Mix in crabmeat, shrimp, and Worcestershire sauce, and simmer until flavors have blended, 45 more minutes. Just before serving, stir in 2 more teaspoons of file gumbo powder.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="rModalFooter">
+                            <button type="button" class="nextRMBtn btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 4)">Next Step</button>
+                            
+                            <button type="button" class="backRMBtn btn btn-primary step step-4" data-step="4" onclick="sendEvent('#demo-modal-3', 3)">Last Step</button>
+                            
+                            <button type="button" class="nextRMBtn btn btn-primary step step-4" data-dismiss="modal" onclick="sendEvent('#demo-modal-3', 4)">Done!</button>
+                        </div>
+                        <div class="m-progress">
+                            <div class="m-progress-bar-wrapper">
+                                <div class="m-progress-bar">
+                                </div>
+                            </div>
+                            <div class="m-progress-complete">
+                                Complete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+        <!-- MODAL ENDS HERE -->
+        
+        
         <header class="headerRecipe r00009bg">
             <a class="backbtn" href="/category/soup.html">
                 <div class="backChev">
@@ -68,6 +303,16 @@
                         </div>
                     </div>
                 </div>
+                
+                <!--- Modal Button-->
+                
+                <div class="startCookingBTN">
+                    <button class="btn btn-default modalPageBtn" data-toggle="modal" data-target="#demo-modal-3">Start Cooking
+                    </button>
+                </div>
+                
+                <!--- Modal Button-->
+                
             </div>
         </header>
         
@@ -212,6 +457,17 @@
     
         <footer class="simpleFooter recipeFooter">
         </footer>
+        
+        <!-- MODAL SCRIPT -->
+        
+        <script src="/js/multi-step-modal.js"></script>
+        <script>
+        sendEvent = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
+        }
+        </script>
+        
+        <!-- MODAL SCRIPT -->
     
     </body>
 </html>
